@@ -21,8 +21,7 @@ Hi there! I'm a dedicated full stack web developer specializing in **Next.js** w
 - **Database**: MongoDB
 - **Authentication**: Auth.js
 
-
 ## Contact
 
-- [LinkedIn](#https://www.linkedin.com/in/ahmedjk34/)
-- [Email](ahmedtaher212005@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/ahmedjk34/)
+- [Email](mailto:ahmedtaher212005@gmail.com)
