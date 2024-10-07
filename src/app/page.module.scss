@@ -1,0 +1,124 @@
+@use "../styles/variables" as v;
+// @use "../mixins" as m;
+.hero {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+  min-height: 90dvh;
+  overflow: hidden;
+  color: v.$secondary-accent;
+  .heroInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    &::after {
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: " ";
+      position: absolute;
+      z-index: 0;
+      background: linear-gradient(125deg, rgb(0, 255, 255) 0%, deeppink 35%);
+      -webkit-mask: radial-gradient(circle at 5% 30%, red 0%, transparent 25%);
+    }
+    p {
+      max-width: 650px;
+    }
+    span {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      &::after {
+        left: 60vw;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: " ";
+        position: absolute;
+        z-index: 0;
+        background: linear-gradient(125deg, aqua 13%, deeppink 38%);
+        -webkit-mask: radial-gradient(
+          circle at 30% 50%,
+          red 0%,
+          transparent 25%
+        );
+      }
+    }
+    h1 {
+      position: relative;
+      z-index: 2;
+      max-width: 650px;
+
+      // @include m.gradient-text-outline(
+      //   blue,
+      //   v.$secondary-accent,
+      //   v.$primary-accent
+      // );
+      font-family: v.$title-font;
+      font-weight: 800;
+      font-size: 4rem;
+    }
+  }
+}
+
+.subjectCardsHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  h1 {
+    font-family: v.$secondary-font;
+    width: max-content;
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      margin-top: 4px;
+      // @include m.gradient-underline(
+      //   blue,
+      //   v.$secondary-accent,
+      //   v.$primary-accent
+      // );
+    }
+  }
+}
+
+/* Small phones (up to 480px) */
+@media (max-width: 480px) {
+  .hero {
+    .heroInfo {
+      padding: 1rem;
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+/* Medium phones (481px to 767px) */
+@media (max-width: 850px) {
+  .hero {
+    .heroInfo {
+      padding: 1rem;
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 70dvh;
+  }
+}
