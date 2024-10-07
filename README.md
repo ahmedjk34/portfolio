@@ -1,4 +1,4 @@
-# Portfolio of a Full Stack Developer
+# My Portfolio as a Full-Stack Web Developer 
 
 Hi there! I'm a dedicated full stack web developer specializing in **Next.js** with **TypeScript**, **SCSS** for styling, and **MongoDB** for databases. I also have experience with **Node.js** and **Express.js** in the past.
 
@@ -24,5 +24,5 @@ Hi there! I'm a dedicated full stack web developer specializing in **Next.js** w
 
 ## Contact
 
-- [LinkedIn](#)
-- [Email](#)
+- [LinkedIn](#https://www.linkedin.com/in/ahmedjk34/)
+- [Email](ahmedtaher212005@gmail.com)
