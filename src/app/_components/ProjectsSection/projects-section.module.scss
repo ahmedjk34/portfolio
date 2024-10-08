@@ -1,0 +1,6 @@
+@use "../../../styles/variables" as v;
+@use "../../../styles//mixins" as m;
+.projectsSection {
+  min-height: calc(100dvh - 300px);
+  position: relative;
+}

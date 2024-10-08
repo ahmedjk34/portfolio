@@ -1,5 +1,6 @@
 import AboutMe from "./_components/AboutMe/AboutMe";
 import Hero from "./_components/Hero/Hero";
+import ProjectsSection from "./_components/ProjectsSection/ProjectsSection";
 import Skills from "./_components/Skills/TechStack";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <AboutMe />
       <Skills />
+      <ProjectsSection />
     </>
   );
 }
