@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Portfolio as a Full-Stack Web Developer 
 
-## Getting Started
+Hi there! I'm a dedicated full stack web developer specializing in **Next.js** with **TypeScript**, **SCSS** for styling, and **MongoDB** for databases. I also have experience with **Node.js** and **Express.js** in the past.
 
-First, run the development server:
+🎓 I’m currently in my **third year of Computer Engineering** and have maintained a **GPA of 3.96** while balancing rigorous academic work and building innovative web solutions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+👨‍💻 My tech journey started in high school with HTML and CSS, and it has since been an exciting adventure! I've worked on a variety of projects, honing both my frontend and backend skills, making me versatile and adaptable to the needs of modern web applications.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔧 As a computer engineering student, I’ve gained a solid foundation in **algorithms**, **data structures**, and **software design principles**. My passion for learning ensures I stay updated with the latest industry trends and technologies.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🌟 Looking forward, my goal is to continue leveraging my skills to build impactful web solutions. I’m eager to connect with like-minded professionals and explore new opportunities.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔗 **Feel free to connect with me or check out my latest projects to see what I've been working on!**
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## My Development Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend**: Next.js, TypeScript, SCSS
+- **Backend**: Node.js, Express.js (If I'm creating a dedicated server, mostly I use the API route in NextJS)
+- **Database**: MongoDB
+- **Authentication**: Auth.js
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [LinkedIn](https://www.linkedin.com/in/ahmedjk34/)
+- [Email](mailto:ahmedtaher212005@gmail.com)
