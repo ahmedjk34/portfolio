@@ -56,6 +56,20 @@
       font-size: 4rem;
       color: v.$primary-text-color;
     }
+    .arrow {
+      border: solid v.$primary-text-color;
+      border-width: 0 9px 9px 0;
+      display: inline-block;
+      padding: 9px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      position: absolute;
+      bottom: 3rem;
+      animation: arrowEffect 1.5s forwards infinite ease-in-out;
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
 
@@ -78,5 +92,17 @@
   }
   100% {
     background: linear-gradient(125deg, blue 0%, violet 35%);
+  }
+}
+
+@keyframes arrowEffect {
+  0% {
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(45deg);
+  }
+  100% {
+    transform: translateY(0) rotate(45deg);
   }
 }
