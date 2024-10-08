@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./about-me.module.scss";
+import ScrollArrow from "../ScrollArrow/ScrollArrow";
 // import aboutMeImage from "@/../../public/about-me-image.png";
 type Props = {};
 
@@ -29,6 +30,7 @@ function AboutMe({}: Props) {
 
         <img src={"/about-me-image.png"} alt="about-me-image"></img>
       </div>
+      <ScrollArrow id="skills" />
     </div>
   );
 }
