@@ -30,7 +30,7 @@ function AboutMe({}: Props) {
 
         <img src={"/about-me-image.png"} alt="about-me-image"></img>
       </div>
-      <ScrollArrow id="skills" />
+      <ScrollArrow id="tech-stack" />
     </div>
   );
 }
