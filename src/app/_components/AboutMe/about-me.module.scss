@@ -1,3 +1,47 @@
+@use "../../../styles/variables" as v;
+@use "../../../styles//mixins" as m;
 .aboutMe {
   min-height: 50dvh;
+  padding: 0 20vw;
+  h1 {
+    @include m.title-style;
+  }
+  .aboutMeInfoSection {
+    display: flex;
+    padding: 2rem;
+    p {
+      padding: 1rem;
+      max-width: 700px;
+      font-size: 1.25rem;
+      //for highlighting
+      span {
+        color: v.$secondary-text-color;
+        font-weight: 700;
+      }
+    }
+    img {
+      width: auto;
+      height: 350px;
+      object-fit: contain;
+      animation: bouncyEffect 3s ease-in-out infinite forwards;
+    }
+  }
+}
+
+@keyframes bouncyEffect {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
