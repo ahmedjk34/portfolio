@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./techStack.module.scss";
 import techStack from "./techStackData";
 import ScrollArrow from "../ScrollArrow/ScrollArrow";
+
 type Props = {};
 
 function Skills({}: Props) {
@@ -10,8 +11,8 @@ function Skills({}: Props) {
       <h1>Tech Stack</h1>
       <div className={styles.techSlider}>
         <div className={styles.techSlide}>
-          {techStack.map((tech) => (
-            <div className={styles.tech}>
+          {techStack.map((tech, index) => (
+            <div className={styles.tech} key={index}>
               <img
                 src={tech.image}
                 alt={tech.title}
@@ -20,10 +21,8 @@ function Skills({}: Props) {
               <h3>{tech.title}</h3>
             </div>
           ))}
-        </div>
-        <div className={styles.techSlide}>
-          {techStack.map((tech) => (
-            <div className={styles.tech}>
+          {techStack.map((tech, index) => (
+            <div className={styles.tech} key={index}>
               <img
                 src={tech.image}
                 alt={tech.title}

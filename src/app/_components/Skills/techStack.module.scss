@@ -1,28 +1,37 @@
 @use "../../../styles/variables" as v;
-@use "../../../styles//mixins" as m;
+@use "../../../styles/mixins" as m;
+
 .skillsSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   min-width: 100dvw;
-  overflow: scroll;
+  overflow: hidden;
   height: 300px;
 
   h1 {
     @include m.title-style;
     margin-bottom: 1rem;
   }
+
   .techSlider {
-    overflow: hidden;
     display: flex;
+    overflow: hidden;
+
     .techSlide {
+      display: flex;
       gap: 1rem;
       padding: 1rem;
       background-color: black;
-      animation: 50s slideEffect infinite linear;
+      animation: 31.5s slideEffect infinite linear;
       width: fit-content;
       white-space: nowrap;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+
       .tech {
         min-width: 150px;
         height: 150px;
@@ -37,11 +46,25 @@
         box-shadow: 0px 0px 16px v.$secondary-background;
         border-radius: 1rem;
         margin: 0 20px;
+        transition: all 0.25s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05) translateY(-3.5px);
+          box-shadow: 0px 0px 16px white;
+        }
+
         .techIcon {
           width: 50px;
           height: 50px;
         }
       }
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 100%;
     }
   }
 }
@@ -51,6 +74,6 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
