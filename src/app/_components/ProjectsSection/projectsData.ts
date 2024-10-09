@@ -14,7 +14,7 @@ const projects: ProjectType[] = [
     projectImage: "/images/projects/focus.png",
   },
   {
-    title: "Forecastly - Real-Time Weather App",
+    title: "Forecastly - Real Time Weather App",
     techStack: [
       { name: "Next.js", image: "/images/tech/nextjs-color.svg" },
       { name: "React", image: "/images/tech/react-color.svg" },
@@ -27,7 +27,7 @@ const projects: ProjectType[] = [
     ],
     shortDescription:
       "Weatherly is a real-time weather application that enables users to quickly access current weather conditions by searching for cities or using their current location. Integrated with OpenWeatherAPI, it delivers precise forecasts, including temperature, humidity, wind speed, and the chance of rain. The app also features future weather predictions, unit conversions between Celsius and Fahrenheit, and a mobile-friendly interface, making it accessible and easy to use on any device.",
-    projectImage: "/images/projects/weatherly.png",
+    projectImage: "/images/projects/forecastly.png",
   },
   {
     title: "Tech Haven - PC Parts E-Commerce",
