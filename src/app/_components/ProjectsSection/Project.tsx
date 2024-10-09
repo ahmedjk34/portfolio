@@ -17,7 +17,7 @@ function Project({ project }: Props) {
       <div className={styles.projectContent}>
         <div className={styles.projectInfo}>
           <h2>{project?.title}</h2>
-          <div>
+          <div className={styles.iconsHolder}>
             {project.techStack.map((tech) => (
               <img src={tech.image} alt={tech.name} className={styles.icon} />
             ))}

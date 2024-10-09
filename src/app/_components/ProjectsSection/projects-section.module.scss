@@ -3,4 +3,101 @@
 .projectsSection {
   min-height: calc(100dvh - 300px);
   position: relative;
+  h1 {
+    @include m.title-style;
+  }
+  .projectsHolder {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 3rem;
+    .project {
+      background: v.$secondary-background;
+      border-radius: 7px;
+      width: clamp(60vw, 65rem, 95vw);
+      transition: transform 0.3s ease-in-out;
+      .windowHeader {
+        .dot {
+          height: 15px;
+          width: 15px;
+          background: #ed594a;
+          display: inline-block;
+          border-radius: 50%;
+          margin-right: 7px;
+          &:nth-child(2) {
+            background: #fdd800;
+          }
+          &:nth-child(3) {
+            background: #5ac05a;
+          }
+        }
+        width: 100%;
+        padding: 0 15px;
+        height: 2rem;
+        background: #333;
+        border-radius: 7px 7px 0 0;
+        display: flex;
+        align-items: center;
+      }
+      .projectContent {
+        display: flex;
+        height: calc(100% - 2rem);
+        position: relative;
+        &::after {
+          display: block;
+          content: "";
+          width: 50%;
+          height: 100%;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 10000;
+          background-color: rgba($color: black, $alpha: 0.85);
+          transition: background-color 0.4s linear;
+        }
+
+        .projectInfo {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          padding: 1rem 2rem;
+          h2 {
+            text-align: center;
+            font-family: v.$title-font;
+          }
+
+          .iconsHolder {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            .icon {
+              width: 50px;
+              height: 50px;
+            }
+          }
+          p {
+            color: v.$secondary-text-color;
+          }
+        }
+        .projectImage {
+          width: 50%;
+          object-fit: cover;
+          aspect-ratio: 16/9;
+        }
+      }
+      &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        .projectContent {
+          &::after {
+            background-color: rgba($color: black, $alpha: 0);
+          }
+        }
+      }
+    }
+  }
 }
