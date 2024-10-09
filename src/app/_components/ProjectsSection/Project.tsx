@@ -9,12 +9,23 @@ type Props = {
 function Project({ project }: Props) {
   return (
     <div className={styles.project}>
-      {/* <h2>{project?.title}</h2>
-      {project.techStack.map((tech) => (
-        <img src={tech.image} alt={tech.name} className={styles.icon} />
-      ))}
-      <img src={project.projectImage} />
-      <p>{project.shortDescription}</p> */}
+      <div className={styles.windowHeader}>
+        <div className={styles.dot}></div>
+        <div className={styles.dot}></div>
+        <div className={styles.dot}></div>
+      </div>
+      <div className={styles.projectContent}>
+        <div className={styles.projectInfo}>
+          <h2>{project?.title}</h2>
+          <div>
+            {project.techStack.map((tech) => (
+              <img src={tech.image} alt={tech.name} className={styles.icon} />
+            ))}
+          </div>
+          <p>{project.shortDescription}</p>
+        </div>
+        <img src={project.projectImage} className={styles.projectImage} />
+      </div>
     </div>
   );
 }
