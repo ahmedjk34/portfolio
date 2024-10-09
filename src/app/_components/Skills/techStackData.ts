@@ -1,7 +1,7 @@
 const techStack = [
+  { title: "React", image: "/images/tech/react-color.svg" },
   { title: "NextJS", image: "/images/tech/nextjs-color.svg" },
   { title: "SASS", image: "/images/tech/sass-color.svg" },
-  { title: "React", image: "/images/tech/react-color.svg" },
   { title: "TypeScript", image: "/images/tech/typescript-color.svg" },
   { title: "MongoDB", image: "/images/tech/mongodb-color.svg" },
   { title: "Mongoose", image: "/images/tech/mongoose-color.svg" },
