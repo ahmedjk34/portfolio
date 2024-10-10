@@ -6,4 +6,6 @@ export interface ProjectType {
   }[];
   shortDescription: string;
   projectImage: string;
+  projectGitHubURL: string;
+  projectSiteURL: string;
 }
