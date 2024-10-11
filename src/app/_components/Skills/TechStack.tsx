@@ -33,6 +33,7 @@ function Skills({}: Props) {
           ))}
         </div>
       </div>
+      <ScrollArrow id="projects" />
     </div>
   );
 }
