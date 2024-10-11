@@ -8,45 +8,47 @@
   position: relative;
   min-width: 100dvw;
   overflow: hidden;
-  height: 300px;
+  min-height: 100dvh;
 
   h1 {
     @include m.title-style;
-    margin-bottom: 1rem;
   }
 
   .techSlider {
     display: flex;
     overflow: hidden;
+    padding: 1.9rem;
 
     .techSlide {
       display: flex;
       gap: 1rem;
-      padding: 1rem;
-      background-color: black;
       animation: 31.5s slideEffect infinite linear;
       width: fit-content;
       white-space: nowrap;
-
+      position: relative;
       &:hover {
         animation-play-state: paused;
       }
 
       .tech {
-        min-width: 150px;
-        height: 150px;
+        min-width: 280px;
+        height: 280px;
         display: inline-flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2rem;
         padding: 1rem;
-        color: v.$secondary-text-color;
+        color: v.$primary-accent;
         background-color: v.$secondary-background;
         box-shadow: 0px 0px 16px v.$secondary-background;
         border-radius: 1rem;
         margin: 0 20px;
         transition: all 0.25s ease-in-out;
+
+        h3 {
+          font-size: 1.6rem;
+        }
 
         &:hover {
           cursor: pointer;
@@ -55,8 +57,8 @@
         }
 
         .techIcon {
-          width: 50px;
-          height: 50px;
+          width: 85px;
+          height: 85px;
         }
       }
     }
@@ -65,6 +67,16 @@
       content: "";
       display: inline-block;
       width: 100%;
+    }
+    &::before {
+      display: block;
+      content: " ";
+      position: absolute;
+      z-index: 1000;
+
+      width: 100%;
+      height: 280px;
+      left: 0;
     }
   }
 }
