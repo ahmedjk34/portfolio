@@ -6,7 +6,7 @@ type Props = {};
 
 function ProjectsSection({}: Props) {
   return (
-    <div className={styles.projectsSection}>
+    <div className={styles.projectsSection} id="projects">
       <h1>My Projects</h1>
       <div className={styles.projectsHolder}>
         {projects.map((project) => (
