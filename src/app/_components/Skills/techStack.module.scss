@@ -50,6 +50,7 @@
       width: fit-content;
       white-space: nowrap;
       position: relative;
+      z-index: 9999;
       &:hover {
         animation-play-state: paused;
       }
