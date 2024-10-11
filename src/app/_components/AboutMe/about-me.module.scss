@@ -12,6 +12,7 @@
   .aboutMeInfoSection {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 2rem;
     p {
       padding: 1rem;
@@ -60,5 +61,19 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .aboutMe {
+    .aboutMeInfoSection {
+      flex-direction: column;
+      padding: 1rem;
+      margin-bottom: 5rem;
+      img {
+        order: -1;
+        max-width: 90vw;
+      }
+    }
   }
 }
