@@ -26,11 +26,19 @@ function Project({ project }: Props) {
           <div className={styles.actionsHolder}>
             <a href={project.projectGitHubURL} target="_blank">
               View Github Repository{" "}
-              <img src="/github-color.svg" className={styles.icon}></img>
+              <img
+                src="/github-color.svg"
+                className={styles.icon}
+                alt="link to github"
+              ></img>
             </a>
             <a href={project.projectSiteURL} target="_blank">
               View The Site{" "}
-              <img src="/link-color.svg" className={styles.icon}></img>
+              <img
+                src="/link-color.svg"
+                className={styles.icon}
+                alt="link to site"
+              ></img>
             </a>
           </div>
         </div>
