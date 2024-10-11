@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectType } from "@/util/Types";
 import styles from "./projects-section.module.scss";
-
+import Link from "next/link";
 type Props = {
   project: ProjectType;
 };
@@ -23,6 +23,16 @@ function Project({ project }: Props) {
             ))}
           </div>
           <p>{project.shortDescription}</p>
+          <div className={styles.actionsHolder}>
+            <a href={project.projectGitHubURL} target="_blank">
+              View Github Repository{" "}
+              <img src="/github-color.svg" className={styles.icon}></img>
+            </a>
+            <a href={project.projectSiteURL} target="_blank">
+              View The Site{" "}
+              <img src="/link-color.svg" className={styles.icon}></img>
+            </a>
+          </div>
         </div>
         <img src={project.projectImage} className={styles.projectImage} />
       </div>

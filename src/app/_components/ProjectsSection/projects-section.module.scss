@@ -82,6 +82,28 @@
           p {
             color: v.$secondary-text-color;
           }
+          .actionsHolder {
+            display: flex;
+            gap: 1rem;
+            a {
+              color: inherit;
+              text-decoration: none;
+              background-color: v.$primary-accent;
+              padding: 0.5rem;
+              border-radius: 0.5rem;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              transition: all 0.2s linear;
+              &:hover {
+                transform: translateY(-8px);
+              }
+            }
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
         }
         .projectImage {
           width: 50%;
