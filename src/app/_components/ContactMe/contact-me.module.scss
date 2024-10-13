@@ -128,3 +128,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .contactMeSection {
+    .contactMeContainer {
+      flex-direction: column;
+      .sidebar {
+        order: -1;
+        flex-direction: row;
+        justify-content: center;
+        width: fit-content;
+        padding: 1rem 2rem;
+        align-self: center;
+      }
+    }
+  }
+}
