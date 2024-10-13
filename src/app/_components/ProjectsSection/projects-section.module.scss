@@ -16,7 +16,7 @@
     .project {
       background: v.$secondary-background;
       border-radius: 7px;
-      width: clamp(60vw, 65rem, 95vw);
+      width: clamp(55vw, 55rem, 92vw);
       transition: transform 0.3s ease-in-out;
       .windowHeader {
         .dot {
@@ -45,6 +45,7 @@
         display: flex;
         height: calc(100% - 2rem);
         position: relative;
+
         &::after {
           display: block;
           content: "";
@@ -85,6 +86,7 @@
           .actionsHolder {
             display: flex;
             gap: 1rem;
+            text-align: center;
             a {
               color: inherit;
               text-decoration: none;
@@ -117,6 +119,33 @@
         .projectContent {
           &::after {
             background-color: rgba($color: black, $alpha: 0);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .projectsSection {
+    .projectsHolder {
+      .project {
+        .projectContent {
+          flex-direction: column;
+          &::after {
+            display: none;
+          }
+
+          .projectInfo {
+            gap: 1rem;
+            order: 1;
+            .actionsHolder {
+              justify-content: center;
+            }
+          }
+          .projectImage {
+            width: 100%;
+            height: 10%;
           }
         }
       }
