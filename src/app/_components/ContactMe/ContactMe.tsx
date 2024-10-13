@@ -161,21 +161,31 @@ function ContactMe() {
           </div>
 
           <div className={styles.sidebar}>
-            <img
-              src="/images/contact-me/linkedin.svg"
-              alt="LinkedIn"
-              className={styles.socialIcon}
-            />
-            <img
-              src="/images/contact-me/github.svg"
-              alt="GitHub"
-              className={styles.socialIcon}
-            />
-            <img
-              src="/images/contact-me/discord.svg"
-              alt="Discord"
-              className={styles.socialIcon}
-            />
+            <a target="_blank" href="https://www.linkedin.com/in/ahmedjk34/">
+              <img
+                src="/images/contact-me/linkedin.svg"
+                alt="LinkedIn"
+                className={styles.socialIcon}
+              />
+            </a>
+            <a target="_blank" href="https://github.com/ahmedjk34">
+              <img
+                src="/images/contact-me/github.svg"
+                alt="GitHub"
+                className={styles.socialIcon}
+              />
+            </a>
+
+            <a
+              target="_blank"
+              href="https://discord.com/users/344550751801966592"
+            >
+              <img
+                src="/images/contact-me/discord.svg"
+                alt="Discord"
+                className={styles.socialIcon}
+              />
+            </a>
           </div>
         </div>
       </div>
