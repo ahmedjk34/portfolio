@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/portfolio",
+  basePath: "https://ahmedjk34.github.io/portfolio",
 };
 
 export default nextConfig;
