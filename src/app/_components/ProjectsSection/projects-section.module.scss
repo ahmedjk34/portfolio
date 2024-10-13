@@ -16,7 +16,7 @@
     .project {
       background: v.$secondary-background;
       border-radius: 7px;
-      width: clamp(55vw, 55rem, 92vw);
+      width: clamp(65vw, 65rem, 92vw);
       transition: transform 0.3s ease-in-out;
       .windowHeader {
         .dot {
@@ -45,6 +45,7 @@
         display: flex;
         height: calc(100% - 2rem);
         position: relative;
+        min-height: 400px;
 
         &::after {
           display: block;
@@ -82,6 +83,7 @@
           }
           p {
             color: v.$secondary-text-color;
+            font-size: 1.1rem;
           }
           .actionsHolder {
             display: flex;
@@ -91,11 +93,12 @@
               color: inherit;
               text-decoration: none;
               background-color: v.$primary-accent;
-              padding: 0.5rem;
+              padding: 0.75rem;
               border-radius: 0.5rem;
               display: flex;
               align-items: center;
               gap: 0.5rem;
+              font-size: 1.05rem;
               transition: all 0.2s linear;
               &:hover {
                 transform: translateY(-8px);
