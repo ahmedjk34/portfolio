@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  basePath: "https://ahmedjk34.github.io/portfolio",
-};
 
+const nextConfig = {
+  basePath: "/portfolio",
+  output: "export",
+  reactStrictMode: true,
+};
 export default nextConfig;
