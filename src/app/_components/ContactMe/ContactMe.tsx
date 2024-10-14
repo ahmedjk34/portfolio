@@ -152,7 +152,7 @@ function ContactMe() {
                         verticalAlign: "middle",
                         marginLeft: "0.2rem",
                       }}
-                      src="/email.svg"
+                      src="./email.svg"
                     ></img>
                   </span>
                 </button>
@@ -163,14 +163,14 @@ function ContactMe() {
           <div className={styles.sidebar}>
             <a target="_blank" href="https://www.linkedin.com/in/ahmedjk34/">
               <img
-                src="/images/contact-me/linkedin.svg"
+                src="./images/contact-me/linkedin.svg"
                 alt="LinkedIn"
                 className={styles.socialIcon}
               />
             </a>
             <a target="_blank" href="https://github.com/ahmedjk34">
               <img
-                src="/images/contact-me/github.svg"
+                src="./images/contact-me/github.svg"
                 alt="GitHub"
                 className={styles.socialIcon}
               />
@@ -181,7 +181,7 @@ function ContactMe() {
               href="https://discord.com/users/344550751801966592"
             >
               <img
-                src="/images/contact-me/discord.svg"
+                src="./images/contact-me/discord.svg"
                 alt="Discord"
                 className={styles.socialIcon}
               />
