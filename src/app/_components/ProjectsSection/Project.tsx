@@ -29,7 +29,7 @@ function Project({ project }: Props) {
               <a href={project.projectGitHubURL} target="_blank">
                 View Github Repository{" "}
                 <img
-                  src="/public/github-color.svg"
+                  src="github-color.svg"
                   className={styles.icon}
                   alt="link to github"
                 ></img>
@@ -37,7 +37,7 @@ function Project({ project }: Props) {
               <a href={project.projectSiteURL} target="_blank">
                 View The Site{" "}
                 <img
-                  src="/link-color.svg"
+                  src="link-color.svg"
                   className={styles.icon}
                   alt="link to site"
                 ></img>
