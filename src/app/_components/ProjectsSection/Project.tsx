@@ -29,7 +29,7 @@ function Project({ project }: Props) {
               <a href={project.projectGitHubURL} target="_blank">
                 View Github Repository{" "}
                 <img
-                  src="/github-color.svg"
+                  src="/public/github-color.svg"
                   className={styles.icon}
                   alt="link to github"
                 ></img>

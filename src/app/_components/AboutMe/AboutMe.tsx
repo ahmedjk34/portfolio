@@ -32,7 +32,7 @@ function AboutMe({}: Props) {
             I can contribute my skills and continue to grow professionally.
           </p>
 
-          <img src={"/about-me-image.png"} alt="about-me-image"></img>
+          <img src={"./about-me-image.png"} alt="about-me-image"></img>
         </div>
         <ScrollArrow id="tech-stack" />
       </div>
