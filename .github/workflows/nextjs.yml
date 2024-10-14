@@ -22,7 +22,6 @@ env:
   NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: template_way4wdf
   NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: sxTWM_1-C7lKWBrfD
 
-
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
@@ -89,6 +88,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+      - name : "test run"
+        run: "echo{env.NEXT_PUBLIC_EMAILJS_SERVICE_ID}"
 
   # Deployment job
   deploy:
