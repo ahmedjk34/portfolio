@@ -91,3 +91,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        env:
+          NEXT_PUBLIC_EMAILJS_SERVICE_ID: service_civjhdn
+          NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: template_way4wdf
+          NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: sxTWM_1-C7lKWBrfD
