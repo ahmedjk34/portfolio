@@ -93,7 +93,6 @@ jobs:
 
 
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
