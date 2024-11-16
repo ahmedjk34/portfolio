@@ -5,6 +5,7 @@ const techStack = [
   { title: "TypeScript", image: "./images/tech/typescript-color.svg" },
   { title: "MongoDB", image: "./images/tech/mongodb-color.svg" },
   { title: "Mongoose", image: "./images/tech/mongoose-color.svg" },
+  { title: "PostgresSQL", image: "./images/tech/postgresql-color.svg" },
   { title: "Next-Auth", image: "./images/tech/next-auth-color.svg" },
   { title: "Firebase", image: "./images/tech/firebase-color.svg" },
   { title: "JavaScript", image: "./images/tech/javascript-color.svg" },
