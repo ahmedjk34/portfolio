@@ -38,8 +38,6 @@ jobs:
         NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: sxTWM_1-C7lKWBrfD
     
     steps:
-      - name : "test run"
-        run: "echo${env.NEXT_PUBLIC_EMAILJS_SERVICE_ID}"
       - name: Checkout
         uses: actions/checkout@v4
       - name: Detect package manager
@@ -93,7 +91,6 @@ jobs:
 
 
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages

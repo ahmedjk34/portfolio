@@ -18,7 +18,7 @@ Hi there! I'm a dedicated full stack web developer specializing in **Next.js** w
 
 - **Frontend**: Next.js, TypeScript, SASS
 - **Backend**: Node.js, Express.js (If I'm creating a dedicated server, mostly I use the API route in NextJS)
-- **Database**: MongoDB
+- **Database**: MongoDB, PostgresSQL
 - **Authentication**: Auth.js
 
 ## Contact
