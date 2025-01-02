@@ -12,7 +12,7 @@ function Hero({}: Props) {
         <p>
           I am a full stack web developer specializing in Next.js, TypeScript,
           SCSS, and MongoDB, among other technologies. Currently, I am in my
-          third year of studying computer engineering at NNU, with a 3.97 GPA.
+          third year of studying computer engineering at NNU, with a 3.96 GPA.
         </p>
         <ScrollArrow id="about" />
       </div>
