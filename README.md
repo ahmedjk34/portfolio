@@ -2,7 +2,7 @@
 
 Hi there! I'm a dedicated full stack web developer specializing in **Next.js** with **TypeScript**, **SCSS** for styling, and **MongoDB** for databases. I also have experience with **Node.js** and **Express.js** in the past.
 
-🎓 I’m currently in my **third year of Computer Engineering** and have maintained a **GPA of 3.96** while balancing rigorous academic work and building innovative web solutions.
+🎓 I’m currently in my **third year of Computer Engineering** and have maintained a **GPA of 3.97** while balancing rigorous academic work and building innovative web solutions.
 
 👨‍💻 My tech journey started in high school with HTML and CSS, and it has since been an exciting adventure! I've worked on a variety of projects, honing both my frontend and backend skills, making me versatile and adaptable to the needs of modern web applications.
 
