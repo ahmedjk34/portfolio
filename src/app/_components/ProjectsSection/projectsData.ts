@@ -16,6 +16,21 @@ const projects: ProjectType[] = [
     projectSiteURL: "https://ahmedjk34.github.io/focus/",
   },
   {
+    title: "MotorShowcase - Car Showcase Website",
+    techStack: [
+      { name: "Next.js 15", image: "./images/tech/nextjs-color.svg" },
+      { name: "React", image: "./images/tech/react-color.svg" },
+      { name: "TypeScript", image: "./images/tech/typescript-color.svg" },
+      { name: "SASS", image: "./images/tech/sass-color.svg" },
+      { name: "Imagin Studio API", image: "./images/tech/api-color.svg" },
+    ],
+    shortDescription:
+      "MotorShowcase is a car showcase website built using Next.js 15 with SASS (SCSS). The platform integrates data generated using artificial intelligence & an external API to provide users with an elegant and responsive interface to explore and showcase a wide variety of cars. The site features advanced filtering, custom search, and user-friendly modal and combobox elements for a seamless and interactive user experience.",
+    projectImage: "./images/projects/motor-showcase.png",
+    projectGitHubURL: "https://github.com/ahmedjk34/motor-showcase",
+    projectSiteURL: "https://motor-showcase.vercel.app/",
+  },
+  {
     title: "Tech Haven - PC Parts E-Commerce",
     techStack: [
       { name: "Next.js", image: "./images/tech/nextjs-color.svg" },
