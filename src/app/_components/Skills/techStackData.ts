@@ -9,6 +9,7 @@ const techStack = [
   { title: "Prisma", image: "./images/tech/prisma-color.svg" },
   { title: "Next-Auth", image: "./images/tech/next-auth-color.svg" },
   { title: "Firebase", image: "./images/tech/firebase-color.svg" },
+  { title: "Turso", image: "./images/tech/turso-color.svg" },
   { title: "JavaScript", image: "./images/tech/javascript-color.svg" },
   { title: "NodeJS", image: "./images/tech/nodejs-color.svg" },
   { title: "ExpressJS", image: "./images/tech/expressjs-color.svg" },
@@ -16,6 +17,7 @@ const techStack = [
   { title: "Figma", image: "./images/tech/figma-color.svg" },
   { title: "HTML5", image: "./images/tech/html5-color.svg" },
   { title: "CSS3", image: "./images/tech/css3-color.svg" },
+  { title: "Bulma", image: "./images/tech/bulma-color.svg" },
 ];
 
 export default techStack;
