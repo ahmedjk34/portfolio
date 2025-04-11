@@ -26,22 +26,26 @@ function Project({ project }: Props) {
             </div>
             <p>{project.shortDescription}</p>
             <div className={styles.actionsHolder}>
-              <a href={project.projectGitHubURL} target="_blank">
-                View Github Repository{" "}
-                <img
-                  src="./github-color.svg"
-                  className={styles.icon}
-                  alt="link to github"
-                ></img>
-              </a>
-              <a href={project.projectSiteURL} target="_blank">
-                View The Site{" "}
-                <img
-                  src="./link-color.svg"
-                  className={styles.icon}
-                  alt="link to site"
-                ></img>
-              </a>
+              {project.projectGitHubURL && (
+                <a href={project.projectGitHubURL} target="_blank">
+                  View Github Repository{" "}
+                  <img
+                    src="./github-color.svg"
+                    className={styles.icon}
+                    alt="link to github"
+                  ></img>
+                </a>
+              )}
+              {project.projectSiteURL && (
+                <a href={project.projectSiteURL} target="_blank">
+                  View The Site{" "}
+                  <img
+                    src="./link-color.svg"
+                    className={styles.icon}
+                    alt="link to site"
+                  ></img>
+                </a>
+              )}
             </div>
           </div>
           <img src={project.projectImage} className={styles.projectImage} />
