@@ -26,7 +26,7 @@ const projects: ProjectType[] = [
     ],
     shortDescription:
       "Road-Watch is a web application designed to provide real-time updates on road conditions in Palestine, specifically focusing on checkpoints. Inspired by the challenges of navigating through Telegram groups for road updates, this app aggregates messages from public Telegram groups every 15 seconds using AWS Lambda and Telegram API. It employs advanced LLM (LLaMA3 + Mixtral-8x7B) to analyze and categorize updates into statuses like 'Open', 'Closed', or 'Traffic'. The results are stored in a Turso database and presented through a simple, user-friendly interface that requires no registration or downloads. The platform ensures accessibility and convenience for daily commuters.",
-    projectImage: "./images/projects/road-watchr.png",
+    projectImage: "./images/projects/road-watch.png",
     projectGitHubURL: "",
     projectSiteURL: "https://palestineroadwatch.vercel.app/",
   },
