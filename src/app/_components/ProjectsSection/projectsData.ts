@@ -16,6 +16,21 @@ const projects: ProjectType[] = [
     projectSiteURL: "https://ahmedjk34.github.io/focus/",
   },
   {
+    title: "Road-Watch: Palestine Checkpoints Status App (وين رايح؟)",
+    techStack: [
+      { name: "Next.js 15", image: "./images/tech/nextjs-color.svg" },
+      { name: "React", image: "./images/tech/react-color.svg" },
+      { name: "TypeScript", image: "./images/tech/typescript-color.svg" },
+      { name: "Bluma", image: "./images/tech/bluma-color.svg" },
+      { name: "Turso", image: "./images/tech/turso-color.svg" },
+    ],
+    shortDescription:
+      "Road-Watch is a web application designed to provide real-time updates on road conditions in Palestine, specifically focusing on checkpoints. Inspired by the challenges of navigating through Telegram groups for road updates, this app aggregates messages from public Telegram groups every 15 seconds using AWS Lambda and Telegram API. It employs advanced LLM (LLaMA3 + Mixtral-8x7B) to analyze and categorize updates into statuses like 'Open', 'Closed', or 'Traffic'. The results are stored in a Turso database and presented through a simple, user-friendly interface that requires no registration or downloads. The platform ensures accessibility and convenience for daily commuters.",
+    projectImage: "./images/projects/road-watchr.png",
+    projectGitHubURL: "",
+    projectSiteURL: "https://palestineroadwatch.vercel.app/",
+  },
+  {
     title: "MotorShowcase - Car Showcase Website",
     techStack: [
       { name: "Next.js 15", image: "./images/tech/nextjs-color.svg" },
@@ -60,7 +75,7 @@ const projects: ProjectType[] = [
       },
     ],
     shortDescription:
-      "Weatherly is a real-time weather application that enables users to quickly access current weather conditions by searching for cities or using their current location. Integrated with OpenWeatherAPI, it delivers precise forecasts, including temperature, humidity, wind speed, and the chance of rain. The app also features future weather predictions, unit conversions between Celsius and Fahrenheit, and a mobile-friendly interface, making it accessible and easy to use on any device.",
+      "Forecastly is a real-time weather application that enables users to quickly access current weather conditions by searching for cities or using their current location. Integrated with OpenWeatherAPI, it delivers precise forecasts, including temperature, humidity, wind speed, and the chance of rain. The app also features future weather predictions, unit conversions between Celsius and Fahrenheit, and a mobile-friendly interface, making it accessible and easy to use on any device.",
     projectImage: "./images/projects/forecastly.png",
     projectGitHubURL: "https://github.com/ahmedjk34/weather-app",
     projectSiteURL:
