@@ -21,7 +21,7 @@ const projects: ProjectType[] = [
       { name: "Next.js 15", image: "./images/tech/nextjs-color.svg" },
       { name: "React", image: "./images/tech/react-color.svg" },
       { name: "TypeScript", image: "./images/tech/typescript-color.svg" },
-      { name: "Bluma", image: "./images/tech/bluma-color.svg" },
+      { name: "Bluma", image: "./images/tech/bulma-color.svg" },
       { name: "Turso", image: "./images/tech/turso-color.svg" },
     ],
     shortDescription:

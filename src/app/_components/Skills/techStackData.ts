@@ -9,7 +9,7 @@ const techStack = [
   { title: "Prisma", image: "./images/tech/prisma-color.svg" },
   { title: "Next-Auth", image: "./images/tech/next-auth-color.svg" },
   { title: "Firebase", image: "./images/tech/firebase-color.svg" },
-  { title: "Turso", image: "./images/tech/turso-color.svg" },
+  { title: "Turso Database", image: "./images/tech/turso-color.svg" },
   { title: "JavaScript", image: "./images/tech/javascript-color.svg" },
   { title: "NodeJS", image: "./images/tech/nodejs-color.svg" },
   { title: "ExpressJS", image: "./images/tech/expressjs-color.svg" },
