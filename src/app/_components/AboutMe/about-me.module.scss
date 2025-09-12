@@ -1,79 +1,297 @@
 @use "../../../styles/variables" as v;
-@use "../../../styles//mixins" as m;
+@use "../../../styles/mixins" as m;
+
 .aboutMe {
   min-height: 100dvh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
   position: relative;
-  h1 {
+  padding: 4rem 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.02) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+  }
+
+  .title {
     @include m.title-style;
   }
-  .aboutMeInfoSection {
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .paragraph {
+    position: relative;
+
+    p {
+      font-size: 1.25rem;
+      line-height: 1.8;
+      color: v.$secondary-text-color;
+      margin: 0;
+      text-align: justify;
+
+      // Base span styling
+      span {
+        font-weight: 600;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      // Tech stack highlighting - clean and professional
+      .tech {
+        color: v.$primary-text-color;
+        font-weight: 600;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: rgba(0, 255, 255, 0.4);
+          transition: all 0.3s ease;
+        }
+
+        &:hover::after {
+          background: rgba(0, 255, 255, 0.8);
+          height: 2px;
+        }
+      }
+
+      // Important highlights - subtle but effective
+      .highlight {
+        color: v.$primary-text-color;
+        font-weight: 700;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(
+            90deg,
+            rgba(0, 255, 255, 0.6),
+            rgba(255, 20, 147, 0.6)
+          );
+          opacity: 0.7;
+        }
+      }
+
+      // University name - professional emphasis
+      .university {
+        color: v.$primary-text-color;
+        font-weight: 700;
+        font-size: 1.05em;
+        letter-spacing: 0.5px;
+      }
+
+      // GPA highlighting - clean emphasis
+      .gpa {
+        color: v.$primary-text-color;
+        font-weight: 700;
+        background: rgba(0, 255, 255, 0.1);
+        padding: 1px 4px;
+        border-radius: 3px;
+      }
+
+      // Call to action - professional but noticeable
+      .cta {
+        color: v.$primary-text-color;
+        font-weight: 700;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(
+            90deg,
+            rgba(255, 20, 147, 0.8),
+            rgba(0, 255, 255, 0.8)
+          );
+        }
+      }
+    }
+  }
+
+  .imageContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    p {
-      padding: 1rem;
-      max-width: 700px;
-      font-size: 1.32rem;
-      line-height: 1.55;
-      //for highlighting
-      span {
-        color: v.$secondary-text-color;
-        font-weight: 700;
+  }
+
+  .imageWrapper {
+    position: relative;
+    display: inline-block;
+
+    .profileImage {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 12px;
+      position: relative;
+      z-index: 2;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
       }
     }
-    img {
-      width: auto;
-      height: 400px;
-      object-fit: contain;
-      animation: scaleEffect 3s ease-in-out infinite forwards;
+
+    // Subtle accent border
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(
+        45deg,
+        rgba(0, 255, 255, 0.3),
+        rgba(255, 20, 147, 0.3)
+      );
+      border-radius: 14px;
+      z-index: 1;
+      opacity: 0.6;
     }
   }
 }
 
-@keyframes bouncyEffect {
-  0% {
-    transform: translateY(0);
-  }
-  30% {
-    transform: translateY(-10px);
+// Subtle animations - professional feel
+@keyframes subtleFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(5px);
-  }
-  70% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
+    transform: translateY(-3px);
   }
 }
 
-@keyframes scaleEffect {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@media only screen and (max-width: 850px) {
+// Responsive Design
+@media (max-width: 1024px) {
   .aboutMe {
-    .aboutMeInfoSection {
-      flex-direction: column;
-      padding: 1rem;
-      margin-bottom: 5rem;
-      img {
-        order: -1;
-        max-width: 90vw;
-      }
+    .content {
+      grid-template-columns: 1fr 320px;
+      gap: 3rem;
+    }
+
+    .imageWrapper .profileImage {
+      width: 300px;
+      height: 300px;
+    }
+
+    .paragraph p {
+      font-size: 1.15rem;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .aboutMe {
+    padding: 3rem 0;
+
+    .container {
+      padding: 0 1.5rem;
+    }
+
+    .content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      text-align: center;
+    }
+
+    .textContent {
+      order: 2;
+    }
+
+    .imageContainer {
+      order: 1;
+    }
+
+    .imageWrapper .profileImage {
+      width: 280px;
+      height: 280px;
+    }
+
+    .paragraph p {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutMe {
+    padding: 2rem 0;
+
+    .container {
+      padding: 0 1rem;
+    }
+
+    .title {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+
+    .textContent {
+      gap: 1.5rem;
+    }
+
+    .imageWrapper .profileImage {
+      width: 250px;
+      height: 250px;
+    }
+
+    .paragraph p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutMe {
+    .imageWrapper .profileImage {
+      width: 220px;
+      height: 220px;
+    }
+
+    .paragraph p {
+      font-size: 0.95rem;
+    }
+
+    .title {
+      font-size: 2.2rem;
     }
   }
 }
