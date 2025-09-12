@@ -2,20 +2,6 @@ import { ProjectType } from "@/util/Types";
 
 const projects: ProjectType[] = [
   {
-    title: "Focus - Social Media Platform",
-    techStack: [
-      { name: "JavaScript", image: "./images/tech/javascript-color.svg" },
-      { name: "React", image: "./images/tech/react-color.svg" },
-      { name: "Firebase", image: "./images/tech/firebase-color.svg" },
-      { name: "CSS", image: "./images/tech/css3-color.svg" },
-    ],
-    shortDescription:
-      "Focus is a dynamic social media platform designed to enhance interaction by allowing users to easily share images, like and comment on posts, and search for other users’ profiles. With an infinite scroll feed and responsive design, Focus ensures a seamless browsing experience across all devices. Powered by Firebase authentication, it provides secure and smooth user logins, enabling users to create profiles, share content, and stay connected effortlessly.",
-    projectImage: "./images/projects/focus.png",
-    projectGitHubURL: "https://github.com/ahmedjk34/focus",
-    projectSiteURL: "https://ahmedjk34.github.io/focus/",
-  },
-  {
     title: "Road-Watch: Palestine Checkpoints Status App (وين رايح؟)",
     techStack: [
       { name: "Next.js 15", image: "./images/tech/nextjs-color.svg" },
@@ -29,6 +15,20 @@ const projects: ProjectType[] = [
     projectImage: "./images/projects/road-watch.png",
     projectGitHubURL: "",
     projectSiteURL: "https://palestineroadwatch.vercel.app/",
+  },
+  {
+    title: "Focus - Social Media Platform",
+    techStack: [
+      { name: "JavaScript", image: "./images/tech/javascript-color.svg" },
+      { name: "React", image: "./images/tech/react-color.svg" },
+      { name: "Firebase", image: "./images/tech/firebase-color.svg" },
+      { name: "CSS", image: "./images/tech/css3-color.svg" },
+    ],
+    shortDescription:
+      "Focus is a dynamic social media platform designed to enhance interaction by allowing users to easily share images, like and comment on posts, and search for other users’ profiles. With an infinite scroll feed and responsive design, Focus ensures a seamless browsing experience across all devices. Powered by Firebase authentication, it provides secure and smooth user logins, enabling users to create profiles, share content, and stay connected effortlessly.",
+    projectImage: "./images/projects/focus.png",
+    projectGitHubURL: "https://github.com/ahmedjk34/focus",
+    projectSiteURL: "https://ahmedjk34.github.io/focus/",
   },
   {
     title: "MotorShowcase - Car Showcase Website",
