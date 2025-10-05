@@ -1,11 +1,14 @@
 @use "../../../styles/variables" as v;
-@use "../../../styles//mixins" as m;
+@use "../../../styles/mixins" as m;
+
 .projectsSection {
   min-height: calc(100dvh - 300px);
   position: relative;
+
   h1 {
     @include m.title-style;
   }
+
   .projectsHolder {
     display: flex;
     width: 100%;
@@ -13,11 +16,13 @@
     align-items: center;
     margin: 1rem 0;
     gap: 3rem;
+
     .project {
       background: v.$secondary-background;
       border-radius: 7px;
       width: clamp(65vw, 65rem, 92vw);
       transition: transform 0.3s ease-in-out;
+
       .windowHeader {
         .dot {
           height: 15px;
@@ -26,6 +31,7 @@
           display: inline-block;
           border-radius: 50%;
           margin-right: 7px;
+
           &:nth-child(2) {
             background: #fdd800;
           }
@@ -33,6 +39,7 @@
             background: #5ac05a;
           }
         }
+
         width: 100%;
         padding: 0 15px;
         height: 2rem;
@@ -41,6 +48,7 @@
         display: flex;
         align-items: center;
       }
+
       .projectContent {
         display: flex;
         height: calc(100% - 2rem);
@@ -61,10 +69,14 @@
         }
 
         .projectInfo {
+          flex: 1 1 50%;
+          min-width: 0;
+          max-width: 50%;
           display: flex;
           flex-direction: column;
           gap: 1rem;
           padding: 1rem 2rem;
+
           h2 {
             text-align: center;
             font-family: v.$title-font;
@@ -76,21 +88,25 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 1rem;
+
             .icon {
               width: 50px;
               height: 50px;
             }
           }
+
           p {
             color: v.$secondary-text-color;
             font-size: 1.1rem;
           }
+
           .actionsHolder {
             display: flex;
             gap: 1rem;
             text-align: center;
             justify-content: center;
             padding-top: 0.75rem;
+
             a {
               color: inherit;
               text-decoration: none;
@@ -102,25 +118,35 @@
               gap: 0.5rem;
               font-size: 1.05rem;
               transition: all 0.2s linear;
+
               &:hover {
                 transform: translateY(-8px);
               }
             }
+
             img {
               width: 20px;
               height: 20px;
             }
           }
         }
+
         .projectImage {
+          flex: 1 1 50%;
           width: 50%;
+          max-width: 50%;
+          min-width: 0;
           object-fit: cover;
           aspect-ratio: 16/9;
+          height: auto;
+          display: block;
         }
       }
+
       &:hover {
         transform: scale(1.05);
         cursor: pointer;
+
         .projectContent {
           &::after {
             background-color: rgba($color: black, $alpha: 0);
@@ -131,26 +157,37 @@
   }
 }
 
+// Responsive styles
 @media only screen and (max-width: 850px) {
   .projectsSection {
     .projectsHolder {
       .project {
         .projectContent {
           flex-direction: column;
+
           &::after {
             display: none;
           }
 
           .projectInfo {
+            max-width: 100%;
+            width: 100%;
+            flex: 1 1 100%;
             gap: 1rem;
             order: 1;
+
             .actionsHolder {
               justify-content: center;
             }
           }
+
           .projectImage {
             width: 100%;
-            height: 10%;
+            max-width: 100%;
+            flex: 1 1 100%;
+            aspect-ratio: 16/9;
+            height: auto;
+            display: block;
           }
         }
       }

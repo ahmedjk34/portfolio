@@ -164,6 +164,9 @@
         transform: translateY(-5px);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
       }
+
+      // Pulsing animation
+      animation: pulseScale 2.5s infinite;
     }
 
     // Subtle accent border
@@ -194,6 +197,17 @@
   }
   50% {
     transform: translateY(-3px);
+  }
+}
+
+// Pulsing scale effect for image
+@keyframes pulseScale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
   }
 }
 
