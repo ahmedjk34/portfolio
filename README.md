@@ -14,6 +14,7 @@ Hi there! I'm a dedicated full stack web developer specializing in **Next.js** w
 
 ---
 
+
 ## My Development Tech Stack
 
 - **Frontend**: Next.js, TypeScript, SASS
